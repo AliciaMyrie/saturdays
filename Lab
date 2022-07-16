@@ -1,0 +1,16 @@
+//given a sentence reverse order: "the sky is blue" -> "euld si yks eht"
+// EX
+//
+
+let str = "the sky is blue";
+
+function changeOrder(str) {
+  // now "str" variable is prioritized in the block scope
+  let originalArray = str.split(""); // turning the str string into an array
+  let reverseArray = originalArray.reverse();
+  let jointStr = reverseArray.join("");
+  return jointStr;
+}
+console.log(changeOrder(str)); // this is the "str" in the global scope
+// same as
+console.log(changeOrder("the sky is blue"));
