@@ -28,5 +28,10 @@ function FizzBuzz(n) {
   return results;
 }
 
-let finalResult = FizzBuzz(15);
-console.log(finalResult);
+let fizzResults = FizzBuzz(15);
+for (let i = 0; i < fizzResults.length; i++) {
+  console.log(fizzResults[i]);
+}
+console.log(fizzResults);
+
+// //let list = fizzResluts.join("\n" );
